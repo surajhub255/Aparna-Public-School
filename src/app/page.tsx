@@ -11,13 +11,13 @@ export default function Home() {
 
   const sliderImages = [
     {
-      url: "https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg",
+      url: "https://tbcsc.org/files/_cache/54a17279bb49cca2a3c91c5aec4a80b7.jpg",
     },
     {
-      url: "https://thumbs.dreamstime.com/b/lone-tree-meadow-sunriseidyllic-fabulous-landscapes-39659821.jpg",
+      url: "https://tbcsc.org/files/_cache/7ba268ee73650e4b984c5541128bb4c2.jpg",
     },
     {
-      url: "https://i.pinimg.com/474x/81/ca/47/81ca47eaae35615ba9a9bb57560aaa3c.jpg",
+      url: "https://tbcsc.org/files/_cache/e04ec5fb206073a5056c2bf2637e2cd7.jpg",
     },
   ];
 
@@ -26,13 +26,13 @@ export default function Home() {
       if (sliderRef.current) {
         setDimensions({
           width: sliderRef.current.clientWidth,
-          height: sliderRef.current.clientWidth * 0.4,
+          height: sliderRef.current.clientWidth * 0.5,
         });
       }
     }
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Set initial dimensions
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="sticky top-0 z-50">
         <Navbar />
       </div>
-      <div ref={sliderRef} className="w-full max-w-screen-3xl mt-8">
+      <div ref={sliderRef} className="w-full max-w-screen-3xl">
         <SimpleImageSlider
           width={dimensions.width}
           height={dimensions.height}

@@ -9,7 +9,7 @@ const Navbar: FC = () => {
 
 
   return (
-    <div className="px-6 py-4 shadow-sm flex justify-between items-center m-2"
+    <div className="px-6 py-4 shadow-sm flex justify-between items-center mb-2"
       style={{ background: "#0F4C81" }}>
       <div className="flex gap-2 items-center">
         <div className="text-2xl">
@@ -26,10 +26,10 @@ const Navbar: FC = () => {
       </div>
 
       <div className="hidden md:flex gap-4 items-center text-white">
-        <a href="/dashboard/crowdfunding-events">ABOUT</a>
+      <a href="/dashboard/yourpoaps">HOME</a>
+        <a href="/dashboard/crowdfunding-events">ABOUT US</a>
         <a href="/dashboard/started-events">ACADEMICS</a>
-        <a href="/dashboard/yourpoaps">ENROLLMENT</a>
-        <a href="/dashboard/yourpoaps">CURRENT STUDENTS</a>
+        <a href="/dashboard/yourpoaps">ADMISSION</a>
 
       </div>
 
@@ -43,10 +43,10 @@ const Navbar: FC = () => {
 
       {menuOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-white w-full shadow-lg py-4">
-          <a href="/dashboard/crowdfunding-events" className="block px-4 py-2 text-black">ABOUT</a>
+          <a href="/dashboard/started-events" className="block px-4 py-2 text-black">HOME</a>
+          <a href="/dashboard/crowdfunding-events" className="block px-4 py-2 text-black">ABOUT US</a>
           <a href="/dashboard/started-events" className="block px-4 py-2 text-black">ACADEMICS</a>
-          <a href="/dashboard/started-events" className="block px-4 py-2 text-black">ENROLLMENT</a>
-          <a href="/dashboard/yourpoaps" className="block px-4 py-2 text-black">CURRENT STUDENTS</a>
+          <a href="/dashboard/yourpoaps" className="block px-4 py-2 text-black">ADMISSION</a>
         </div>
       )}
     </div>
