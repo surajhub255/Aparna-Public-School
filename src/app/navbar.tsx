@@ -26,8 +26,8 @@ const Navbar: FC = () => {
       </div>
 
       <div className="hidden md:flex gap-4 items-center text-white">
-      <a href="/dashboard/yourpoaps">HOME</a>
-        <a href="/dashboard/crowdfunding-events">ABOUT US</a>
+      <a href="/">HOME</a>
+        <a href="/pages/about">ABOUT US</a>
         <a href="/dashboard/started-events">ACADEMICS</a>
         <a href="/dashboard/yourpoaps">ADMISSION</a>
 
@@ -43,8 +43,8 @@ const Navbar: FC = () => {
 
       {menuOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-white w-full shadow-lg py-4">
-          <a href="/dashboard/started-events" className="block px-4 py-2 text-black">HOME</a>
-          <a href="/dashboard/crowdfunding-events" className="block px-4 py-2 text-black">ABOUT US</a>
+          <a href="/" className="block px-4 py-2 text-black">HOME</a>
+          <a href="/pages/about" className="block px-4 py-2 text-black">ABOUT US</a>
           <a href="/dashboard/started-events" className="block px-4 py-2 text-black">ACADEMICS</a>
           <a href="/dashboard/yourpoaps" className="block px-4 py-2 text-black">ADMISSION</a>
         </div>
