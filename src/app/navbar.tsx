@@ -30,6 +30,7 @@ const Navbar: FC = () => {
         <a href="/pages/about">ABOUT US</a>
         <a href="/pages/academics">ACADEMICS</a>
         <a href="/pages/admission">ADMISSION</a>
+        <a href="/pages/gallery">GALLERY</a>
 
       </div>
 
@@ -47,6 +48,7 @@ const Navbar: FC = () => {
           <a href="/pages/about" className="block px-4 py-2 text-black">ABOUT US</a>
           <a href="/pages/academics" className="block px-4 py-2 text-black">ACADEMICS</a>
           <a href="/pages/admission" className="block px-4 py-2 text-black">ADMISSION</a>
+          <a href="/pages/gallery" className="block px-4 py-2 text-black">GALLERY</a>
         </div>
       )}
     </div>
